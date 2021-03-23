@@ -1,0 +1,54 @@
+:root {
+  --bg: #2a282a;
+  --container1: #fbea48;
+  --grey: #9f9f9f;
+  --placeholder: #6b696c;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: "roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.container1 {
+  width: 27rem;
+  height: 35.5rem;
+  background-color: var(--container1);
+  margin: 5rem auto 0;
+  padding: 2.5rem 3.3rem;
+}
+.container2 {
+  width: 26.7rem;
+  height: 23.5rem;
+  background-color: white;
+  margin: 2rem 0;
+  padding: 0 2.3rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  font-size: 1.1rem;
+}
+.avatar {
+  width: 3.5rem;
+  border-radius: 50%;
+  margin: -2rem 0 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.names {
+  display: flex;
+}
