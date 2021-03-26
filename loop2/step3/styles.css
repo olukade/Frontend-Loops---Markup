@@ -18,11 +18,12 @@ body {
 }
 
 .container {
-  width: 20rem;
+  max-width: 20rem;
   height: 20rem;
   background-color: var(--dark-purple);
   margin: 7rem auto;
   border-radius: 6px;
+  box-shadow: 0 5px 13px 8px rgba(0, 0, 0, 0.1);
 }
 
 .photo-arrow {
