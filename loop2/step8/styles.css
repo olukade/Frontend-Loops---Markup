@@ -68,26 +68,46 @@ h3 {
   margin: -31.5rem 0.9rem 0;
 }
 .toggle {
-  width: 4rem;
+  width: 3.5rem;
   height: 2.3rem;
-  border: 2px solid var(--border);
-  border-radius: 50px;
-  background: blue;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 0.15rem;
+  visibility: hidden;
+  cursor: pointer;
 }
 .toggle:before {
   content: "";
   position: absolute;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 3.5rem;
+  height: 2rem;
   background: white;
-  /* border: 2px solid var(--border); */
-  border-radius: 50%;
+  visibility: visible;
+  border: 2.3px solid var(--border);
+  border-radius: 50px;
 }
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: white;
+  visibility: visible;
+  border: 2.3px solid var(--border);
+  border-radius: 50%;
+  margin-top: 0.1rem;
+  left: 0;
+  transition: ease-in-out 0.2s;
+}
+
+.toggle:checked::after {
+  left: calc(100% - 2rem);
+  border: none;
+}
+
+.toggle:checked::before {
+  background-color: blue;
+  border: none;
+}
+
 h2 {
   margin: 0;
   font-size: 1.3rem;

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Loop 2 - Challenge</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
-<body>
-
-  <!--
-    Ah, it smells like a new challenge!
-
-    This time we build a concept of some job search website.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loop 2 - Challenge</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!--
     It's more about small details this time and if you haven't yet tried splitting
     your css into separate component files - that's the perfect time to try.
     (Use @import in css to achieve that)
@@ -23,9 +25,127 @@
     The easiest out-of-the-box method is to use Google Material Icons,
     so read about the implementation before you start:
     https://material.io/icons/
-
-    And good luck!
   -->
 
-</body>
+    <div class="header">
+      <div class="nav-bar">
+        <div class="linkdin">
+          <img class="linkdin-logo" src="./img/logo.png" alt="linkdin logo" />
+        </div>
+        <div class="search-bar">
+          <input class="search-input" type="text" placeholder="search" />
+          <img class="search-icon" src="./img/search-24px.svg" alt="" />
+        </div>
+        <div class="nav-links">
+          <p class="nav-link">Home</p>
+          <p class="nav-link">Profile</p>
+          <p class="nav-link">Connections</p>
+          <p class="nav-link">Interest</p>
+          <p class="nav-link premium">Try Premium</p>
+        </div>
+        <div class="icons">
+          <img class="icon-img" src="./img/comment-24px.svg" alt="" />
+          <img class="icon-img" src="./img/notifications-24px.svg" alt="" />
+          <img class="icon-img" src="./img/person_add-24px.svg" alt="" />
+        </div>
+        <img class="avatar" src="./img/avatar.jpg" alt="" class="profile-pic" />
+      </div>
+      <div class="top">
+        <p class="top-p posts">Posts</p>
+        <p class="top-p">Background</p>
+        <p class="top-p">Recommendations</p>
+        <p class="top-p">Following</p>
+      </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <img class="avatar-bill" src="./img/bill-gates-avatar.png" alt="" />
+        <h2>Bill Gates</h2>
+        <p>Microsoft Founder</p>
+        <p class="grey-p">Great Seattle Area</p>
+        <button>Follow</button>
+        <button>
+          Connect <img src="./img/arrow-down-s-line.svg" alt="" />
+        </button>
+        <div class="network">
+          <div class="gates connect">
+            <p>200</p>
+            <p>connecti...</p>
+          </div>
+          <div class="gates followers">
+            <p>1.9M</p>
+            <p>followers</p>
+          </div>
+        </div>
+        <div class="links">
+          <div class="link">
+            <img class="link-logo" src="./img/link-24px.svg" alt="" />
+            <p>linkedin.com/in/billgat...</p>
+          </div>
+          <div class="link">
+            <img class="link-logo" src="./img/language-24px.svg" alt="" />
+            <p>billgates.com</p>
+          </div>
+        </div>
+        <div class="link export">
+          <img class="link-logo" src="./img/file_upload-24px.svg" alt="" />
+          <p>Export page as PDF</p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="container1">
+          <div class="head">
+            <h3>POSTS</h3>
+            <div class="head-arrow">
+              <div class="arrow-circle">
+                <img class="arrow-img" src="./img/keyboard_arrow_left-24px.svg" alt="">
+              </div>
+              <div class="arrow-circle">
+                <img class="arrow-img" src="./img/keyboard_arrow_right-24px.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      <div class="right">
+        <p>PEOPLE ALSO VIEWED</p>
+        <div class="people">
+          <img class="avatar one" src="./img/avatar.jpg" alt="" />
+          <div class="google">
+            <p>Sergy Brin</p>
+            <p>Google</p>
+            
+          </div>
+        </div>
+        <div class="people">
+          <img class="avatar one" src="./img/avatar2.jpg" alt="" />
+          <div class="google">
+            <p>Jeffrey Bezos</p>
+            <p>Amazon</p>
+          
+          </div>
+        </div>
+        <div class="people">
+          <img class="avatar one" src="./img/avatar3.jpg" alt="" />
+          <div class="google">
+            <p>Steve Jobs</p>
+            <p>Apple</p>
+         
+          </div>
+        </div>
+        <p>MORE INFLUENCERS</p>
+        <div class="influencers">
+          <div class="steve">
+            <img class="arrow" src="./img/keyboard_arrow_left-24px.svg" alt="">
+        <img class="avatar two" src="./img/avatar3.jpg" alt="" />
+        <img class="arrow" src="./img/keyboard_arrow_right-24px.svg" alt="">
+      </div>
+            <h2>Steve Jobs</h2>
+            <p>Apple</p>
+    
+    </div>
+    </div>
+  </body>
 </html>
